@@ -1,12 +1,78 @@
-# React + Vite
+# 🔐 Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure **Password Manager** built with **React.js**, **Tailwind CSS**, and **MongoDB**.  
+It allows users to save, edit, and manage multiple passwords for different websites in a clean UI.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Save multiple website credentials (Site, Username, Password)
+- Edit and delete saved credentials
+- Copy password to clipboard with one click
+- Responsive UI using Tailwind CSS
+- Secure backend with MongoDB
+- Toast notifications for better UX
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+**Frontend:**
+- React.js
+- Tailwind CSS
+- React Toastify
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB
+
+---
+
+## 📂 Project Structure
+password-manager/
+│── backend/ # Express + MongoDB API
+│ ├── server.js
+│ ├── models/
+│ ├── routes/
+│ └── .env
+│
+│── frontend/ # React + Tailwind UI
+│ ├── src/
+│ │ ├── components/
+│ │ ├── App.js
+│ │ └── index.js
+│ └── package.json
+│
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/password-manager.git
+cd password-manager
+
+2. Backend Setup
+cd backend
+nodemon server.js
+
+
+Create a .env file in backend/ with:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+
+Start the backend:
+
+npm start
+
+3. Frontend Setup
+cd ../frontend
+npm install
+npm run dev
+
+he MIT License.
